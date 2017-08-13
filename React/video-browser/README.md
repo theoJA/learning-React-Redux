@@ -1,4 +1,4 @@
-# Creating a web-based video browser
+# Web-based video browser
 
 This video browser uses the YouTube API to fetch data and show real YouTube videos on screen. Videos can be searched, selected, and played in a similar way to how you would normally do so on YouTube. 
 
