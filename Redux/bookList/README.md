@@ -8,5 +8,5 @@ This app was part of an online React course I am currently taking on Udemy. As m
 - Clone repo and cd to project directory
 - npm install
 - npm run start
-- 'localhost:8081' on the browser
+- 'localhost:8080' on the browser
 
