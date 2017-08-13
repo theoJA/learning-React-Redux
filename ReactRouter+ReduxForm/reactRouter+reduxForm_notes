@@ -1,0 +1,95 @@
+Important takeaways:
+
+
+1. Browser Router:
+    - Ties a component to a particular route or path that a user might visit inside
+      of the application
+
+2. Route:
+    - A tag containing two properties, path and component. "component" is the 
+      name of the component to be tied and "path" specifies the name of the route 
+      that the user must visit to display the component.
+
+EXAMPLE:
+
+  <BrowserRouter>
+    <div>
+      Header
+      <Route path="/hello" component={Hello} />
+      <Route path="/goodbye" component={Goodbye} />
+    </div>
+  </BrowserRouter>
+
+
+3. Life-cycle method:
+    - componentDidMount()
+
+4. Unusual behaviour from path in <Route /> tag:
+    - the path specified will search for the presence of such string not for an exact match
+    - for example: path="/" will look for the presence of the "/" not whether the url matches it
+
+5. Switch - imported from react-router-dom:
+    - allows us to switch our route
+    - put the more complicated route as first so it will match that first only then it tries to 
+      match the least complex ones
+
+6. Link tag and "to" property inside the tag
+    - A tag that performs similarly to an anchor tag
+    - The prop "to" sends the user to a certain route
+    - Example:
+
+      <Link className="btn btn-primary" to="/posts/new">
+        Add a Post
+      </Link>
+
+7. Redux-form:
+    - Very useful documentation online
+
+8. reduxForm helper function from the redux-form library
+
+9. Field component inside the form tag:
+    - Example:
+
+      <form>
+        <Field />
+      </form>
+
+10. handleSubmit and onSubmit prop handling:
+
+The recommended way to do server-side validation with redux-form is to 
+return a rejected promise from the onSubmit function. There are two 
+ways to give redux-form a function to run when your form is submitted:
+
+  1.  Pass it as an onSubmit prop to your decorated component. In which 
+      case, you would use onSubmit={this.props.handleSubmit} inside your 
+      decorated component to cause it to fire when the submit button is 
+      clicked.
+  
+  2.  Pass it as a parameter to the this.props.handleSubmit function 
+      from inside your decorated component. In which case, you would use 
+      onClick={this.props.handleSubmit(mySubmit)} inside your decorated 
+      component to cause it to fire when the submit button is clicked.
+
+  ( method 2 is what is being used in the posts_new component )
+
+
+11. Ternary expression:
+
+    {field.meta.touched ? field.meta.error : ''}
+    |       A           |         B        | C |
+    
+    - everything before the question mark (A) is evaluated. If it is TRUE,
+      then the entire expression resolves with whatever is in B. Else
+      if FALSE, C is evaluated
+
+12. ownProps inside mapStateToProps:
+    - is the props object that is heading into the component its mapped to
+    - so in other words, 
+    - class component {
+        this.props === (all the props in the component)
+      }
+
+      mapStateToProps(ownProps)
+
+      this.props === ownProps
+

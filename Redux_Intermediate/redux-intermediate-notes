@@ -1,0 +1,11 @@
+=> middleware:
+    - Lets action pass, manipulates it, logs it, or stops it
+    - Acts like a filter/gatekeeper/bouncer for the actions
+      before they reach the reducers
+
+=> redux-promise:
+    - a redux middleware that handles promises
+
+=> axios:
+    - is a library solely made for ajax request from the browser
+

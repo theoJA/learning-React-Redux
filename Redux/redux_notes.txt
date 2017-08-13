@@ -1,0 +1,53 @@
+What is Redux??
+
+- React represents the views 
+- Redux represents the data contained inside the app
+
+
+- When Redux described itself as a state container, it really means
+  a collection of all the data that describes the app.
+
+
+- That not only includes the hard data but also includes meta level
+  property (eg: what is the currently selected book/video/image/etc)
+- React on the other hand represents the views which translates the app
+  data into something that can be displayed on the screen as something
+  the user can interact with.
+
+___________________________________________________________________________
+
+What's the difference with Angular, Backbone or Flux?
+
+- We centralize all the apps data inside of a single object
+- Redux centralizes all the data into a central single object
+  which we refer to as the 'state'
+
+- (Know the difference between component level state and redux state)
+
+- State with redux is the application level state (the application as
+  a whole / global object that contains all the data of our app) 
+
+___________________________________________________________________________
+
+Reducers, what are they?
+
+- Reducers are functions that return a piece of the application's state
+
+
+___________________________________________________________________________
+ Containers, what are they?
+
+- A container is a react container that has a direct connection to the state managed by redux
+- react-redux is a separate library that bridges the two separate libraries, react and redux
+- the container will help inject data from redux into the view in react
+
+- also known as 'smart component' (as opposed to a 'dumb component' that has no connection to redux)
+
+
+___________________________________________________________________________
+Action Creator
+
+- A function that returns an action (typically an object)
+- That action is automatically sent to all Reducers
+- The reducers can then choose to return a different state depending on the action
+- That state then gets sent to the container and then to the react app
