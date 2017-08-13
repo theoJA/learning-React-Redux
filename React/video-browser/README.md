@@ -1,25 +1,14 @@
-# ReduxSimpleStarter
+# Learning React 
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+### Creating a web-based video browser
 
-### Getting Started
+This video browser uses the YouTube API to fetch data and show real YouTube videos on screen. Videos can be searched, selected, and played in a similar way to how you would normally do so on YouTube. 
 
-There are two methods for getting started with this repo.
+This app was part of an online React course I am currently taking on Udemy. As my familiarity with React grows, I may or may not be adding my own extra functionalities to it.
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+#### To run: 
+- Clone repo and cd to project directory
+- npm install
+- npm start
+- 'localhost:8081' on a browser
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
